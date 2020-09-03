@@ -56,6 +56,7 @@ $(OBJDIR)%.o: $(SRCDIR)%.cpp | subdirs # Compiling
 subdirs: $(SUBDIRS) # Creating all the directories
 $(SUBDIRS): 
 	@mkdir -p $(BINDIR)
+	@mkdir -p $(OBJDIR)
 	@mkdir -p $(OBJDIR)$@
 
 clean:
