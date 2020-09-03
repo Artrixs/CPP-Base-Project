@@ -43,6 +43,8 @@ OBJECTS = $(foreach source, $(SOURCES), $(patsubst %.cpp, %.o, $(source))) # All
 OBJECTS := $(foreach source, $(OBJECTS), $(OBJDIR)$(source)) # Correct Path in OBJDIR
 DEPS = $(patsubst %.o, %.d, $(OBJECTS)) # Dependencies -MMD
 
+SUBDIRS += $(BINDIR) $(OBJDIR)
+
 all: $(PROGRAM)
 
 $(PROGRAM): $(OBJECTS) # Linking
