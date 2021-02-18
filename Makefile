@@ -49,7 +49,7 @@ all: $(PROGRAM)
 
 $(PROGRAM): $(OBJECTS) # Linking
 	@echo "$(notdir $(CURDIR)): LINK $(PROGRAM)"
-	$(QUIET) $(CXX) -o $(PROGRAM) $(OBJECTS)
+	$(QUIET) $(CXX) $(LDFLAGS) -o $(PROGRAM) $(OBJECTS)
 
 $(OBJDIR)%.o: $(SRCDIR)%.cpp | subdirs # Compiling 
 	@echo "$(notdir $(CURDIR)): C++ $@"
