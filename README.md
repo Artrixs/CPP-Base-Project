@@ -1,4 +1,7 @@
-To create the build tree use cmake -S . -B build in the top directory
-Use the -GNinja if you want to use Ninja instead of make
+More info at [https://cliutils.gitlab.io/modern-cmake/]
 
-Then use cmake --build build to compile the project
+From the top directory create the build tree with
+`cmake -S . -B build -GNinja`
+
+Compile the project with
+`cmake --build build`
