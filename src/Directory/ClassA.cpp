@@ -1,3 +1,9 @@
-#include "ClassA.h"
+#include <iostream>
 
-A::A() {}
+#include "ClassA.h"
+#include "only.h"
+
+A::A()
+{
+	std::cout << "Hello wordl " << STORY  << std::endl;
+}
